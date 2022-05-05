@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+header{
+    width: 99vw;
+    height: 10vh;
+    background-color: grey;
+    border: 2px solid grey;
+}
+header nav{
+    margin-top: 4vh;
+    margin-right: 3rem;
+    display: block;
+    text-align: right;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 2rem;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+#main-container{
+    background-color: whitesmoke;
+    height: 120vh;
+    width: 60vw;
+    margin: 0 20vw;
+    padding: 1rem;
+}
+section{
+    background-color: beige;
+    border: 2px dotted black;
+    height: 50%;
+}
+
+.cardholder{
+    display:flex;
+    justify-content: space-between;
+    padding: 5rem
+}
+
+.card{
+    height: 10rem;
+    width: 7rem;
+    border: 3px solid red;
+    background-color: tomato;
+    color: tomato;
+
+}
+.card--animation:hover{
+    background-color: orangered;
+    color: yellow;
+}
