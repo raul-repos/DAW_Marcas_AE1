@@ -288,6 +288,7 @@ form input[type="radio"], form input[type="checkbox"] {
 
 form label {
     margin-top:10px;
+    margin-bottom: 5px;
     display:inline-block;
     font-weight: bold;
 }
@@ -298,4 +299,11 @@ form label {
 
 .nobold {
     font-weight: normal;
+}
+.input-textarea {
+    margin-bottom: 10px;
+}
+form legend {
+    font-size: 30px;
+    font-style: oblique;
 }
