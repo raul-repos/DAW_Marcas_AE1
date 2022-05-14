@@ -25,8 +25,9 @@
 	<div id="main-container">
 		<section>
 			<form id="survey-form">
+				<fieldset><legend> Formulario de contacto:</legend>
 				<label id="name-label" for="name">Nombre</label>
-				<input type="text" name="name" id="name" class="form-control" placeholder="Escriba su nombre" required>
+				<input type="text" name="name" id="name" class="form-control" placeholder="Escriba su nombre" required autofocus>
 
 				<label id="email-label" for="email">Email</label>
 				<input type="email" name="email" id="email" class="form-control" placeholder="Escriba su email" required>
@@ -85,6 +86,10 @@
 				<button type="submit" id="submit" class="submit-button">
 					Enviar
 				</button>
+				<button type="reset" id="restet" class="reset-button">
+					Limpiar formulario
+				</button>
+			</fieldset>
 			</form>
 		</section>
 	</div>
