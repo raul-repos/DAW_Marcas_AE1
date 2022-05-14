@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: lightgrey;
+    background-color: lightgray;
 }
 .ancho-principal {
     width: 80%;
@@ -23,11 +23,13 @@ header{
     margin: auto;
     float: left;
 }
+#contenedor-logo img{
+    max-width: 100%;
+}
 header nav{
     width: 70%;
     text-align: right;
     float: left;
-    border: 1px solid red;
     height: 90%;
     margin: auto;
 }
@@ -126,13 +128,63 @@ footer div {
     padding: 0 10px;
 }
 
+/* Mogollon de media queries */
+
 
   @media only screen and (max-width: 900px) {
     #main-container {
         background-color: red;
+                
+    }
+    /* Ocupa el total de la pantalla */
+    header{
+        position: relative;
+        width:100vw;
+        height: 100vh;
+        background-color: transparent;
+        background-image: linear-gradient(rgba(186, 191, 212, 0.7),
+            rgba(12, 155, 20, 0.7)), url(../images/mobileMainImage.jpg);
+        background-size: cover;
+    }
+    
+
+    /* -- Menu desplegable -- */
+    /* Iconos */
+    
+    .fa-solid{
+        color: lemonchiffon;
+        font-size: 5vw;
         
     }
+    #contenedor-logo{
+        height: fit-content;
+    }
+
+    /* Menu */
+    .menu{
+        
+        position: relative;
+        right: -50vw;
+        border: 2px solid blue;
+        background-color: tomato;
+        display: flex;
+        
+    }
+
+    
+    .nav__link{
+        display: block;
+        /* position: fixed; */
+        background-color: tomato;
+        
+    }
+
 }  
+
+
+
+
+
   @media only screen and (min-width: 900px) and (max-width: 1300px) {
      #main-container {
          background-color:yellow;
@@ -163,7 +215,4 @@ footer div {
 @media only screen and (min-device-width : 844px) and (max-device-width : 390px) and (orientation : landscape) {
       #main-container {
           background-color: grey !important;
-          
-}
-
-
+      }
