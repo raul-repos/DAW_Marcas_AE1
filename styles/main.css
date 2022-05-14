@@ -33,10 +33,15 @@ header {
 
 header nav {
     display: flex;
+<<<<<<< HEAD
     /* border: 1px solid red; */
     align-items: center;
     justify-content: space-evenly;
     /* display: inline-block; */
+=======
+    align-items: center;
+    justify-content: space-evenly;
+>>>>>>> d7b500fb14b3c04ff03aec519c7458e7a14b9d37
     width: 70%;
     text-align: center;
     height: 100%;
@@ -59,8 +64,13 @@ header nav {
 }
 
 /* Animacion hover en links */
+<<<<<<< HEAD
 /* IMPORTANTE que sea en pseudoclase :after para que se renderice después de  */
 .menu__container a::after {
+=======
+/* IMPORTANTE que sea en pseudoelemento :after para que se renderice después de cargar el html (De lo contrario no es una añadido sino que lo modifica totalmente */
+.menu__container a::after{
+>>>>>>> d7b500fb14b3c04ff03aec519c7458e7a14b9d37
     content: '';
     width: 0%;
     height: 2px;
@@ -291,36 +301,48 @@ a.facebook:active {
 
     /* Menu */
 
-    .menu__container {
+    header nav{
+        height: 5rem;
+    }
+    .menu__container{
         display: flex;
         /* border: 1px solid red; */
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         height: 5rem;
         padding: 0, 6rem;
-        background-image: linear-gradient(to right, #1b2f39, rgba(255, 255, 255, 0.89));
+        background-image: linear-gradient(to right,#1b2f39, #818592);
     }
 
+    
+
+    /* Botones de menu */
     .nav__link {
-        /* position: fixed; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: whitesmoke;
         margin-left: 3rem;
         margin-right: 1.5rem;
-        background-color: darkblue;
+        background-color: rgb(173, 188, 236);
         border-radius: 16px;
         height: 2rem;
-        width: 6rem;
-        color: darkgrey;
-        align-items: center;
-        display: flex;
-        padding-left: 2.5rem;
+        width: 6rem;  
+        min-width: 90px;
         transition: all 0.2s;
+        padding-left: 2rem;
     }
 
     .nav__link:hover {
         font-weight: bolder;
-        border-bottom: 3px solid #1e719b;
-        background-color: rgb(2, 2, 206);
+        border-bottom: 3px solid #ffffff;
+        background-color: rgb(124, 124, 235);
         color: rgb(235, 235, 235);
+    }
+
+    .menu__container a:hover::after {
+        width: 0%;
     }
 
     /* Body */
