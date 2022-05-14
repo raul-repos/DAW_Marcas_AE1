@@ -1,30 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-body{
+
+body {
     margin: 0;
     padding: 0;
     background-color: lightgrey;
 }
+
 .ancho-principal {
     width: 80%;
     height: 100%;
     margin: auto;
-    
+
 }
-header{
+
+header {
     width: 100%;
     height: 110px;
     background-color: grey;
-  /*   border: 2px solid grey; */
+    /*   border: 2px solid grey; */
 }
 
-#contenedor-logo{
+#contenedor-logo {
     border: 1px solid red;
     width: 29%;
     height: 90%;
     margin: auto;
     float: left;
 }
-header nav{
+
+header nav {
     width: 70%;
     text-align: right;
     float: left;
@@ -33,64 +37,68 @@ header nav{
     margin: auto;
 }
 
-nav a{
+nav a {
     color: white;
     text-decoration: none;
-   /*  margin: 0 2rem; */
+    /*  margin: 0 2rem; */
 }
-nav a:hover{
+
+nav a:hover {
     background-color: white;
     color: black;
 }
+
 #main-container {
     background-color: whitesmoke;
-    height: 100%; 
+    height: 120vh;
     padding: 20px;
 }
+
 section {
     background-color: beige;
     border: 2px dotted black;
     height: 50%;
     padding: 20px;
 }
-.aside-left{
+
+.aside-left {
 
     position: relative;
     display: inline-block;
     width: 30%;
     height: 100%;
 }
+
 .aside-rigth {
 
     position: relative;
     display: inline-block;
-    width: 65%;
-    margin-left: 40px;
+    width: 60%;
+    /* margin-left: 40px; */
     height: 100%;
 }
-#goglee{
-    display: block;
 
-} 
 
-.cardholder{
-    display:flex;
+.cardholder {
+    display: flex;
     justify-content: space-between;
     /* padding: 5rem */
 }
 
-.card{
-   /*  height: 10rem;
+.card {
+    /*  height: 10rem;
     width: 7rem;*/
     border: 3px solid red;
     background-color: tomato;
     color: tomato;
 
 }
-.card--animation:hover{
+
+.card--animation:hover {
     background-color: orangered;
     color: yellow;
 }
+
 footer {
     font-family: 'Rubik', sans-serif;
     height: 300px;
@@ -102,20 +110,26 @@ footer {
     border-bottom: 25px solid #304886;
 }
 
-.cajas-footer  {
+.cajas-footer {
     height: 250px;
     width: 20%;
     background-color: #1b2f39;
     padding: 25px;
-    float:left;
+    float: left;
 }
-.centrar{text-align: center;}
-.listas-footer{
+
+.centrar {
+    text-align: center;
+}
+
+#caja-mapa {
     list-style-type: none;
-  padding: 0;
-  margin: 10 0 ;
+    padding: 0;
+    margin: 10 0;
+    display: block;
 }
-.logo{
+
+.logo {
     width: 250px;
     height: 100px;
 }
@@ -124,12 +138,13 @@ footer {
 #caja-redes {
     margin: 50px auto;
     width: 125px;
-  }
-a.s3d  {
+}
+
+a.s3d {
     clear: both;
-    opacity: .8; 
-    border-radius:3px; 
-    box-shadow:0 4px 5px rgba(0,0,0,.3); 
+    opacity: .8;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .3);
     display: inline-block !important;
     font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
     height: 26px;
@@ -137,69 +152,77 @@ a.s3d  {
     padding: 0 10px 11px;
     position: relative;
     text-decoration: none;
-    text-shadow: 0 1px 1px rgba(255,255,255,.35);
-    width: 125px;   
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .35);
+    width: 125px;
     transition: width 0.1s ease-in-out, opacity 0.1s ease-in-out, margin-left 0.1s ease-in-out, transform .3s ease-out;
-  }
-  
-  a.s3d:hover {
+}
+
+a.s3d:hover {
     opacity: 1;
     width: 160px;
     margin-left: -10px;
-  }
-  
-  a.s3d:active { transform: translateX(200px); }
-  
-  /* Twitter */
-  a.twitter {
+}
+
+a.s3d:active {
+    transform: translateX(200px);
+}
+
+/* Twitter */
+a.twitter {
     background: #65acc8;
     background: linear-gradient(#65acc8, #4586ae);
     border-top: 1px solid #a1cdde;
-    color: rgba(25,45,55,.9);
-  }
-  
-  a.twitter:active {
+    color: rgba(25, 45, 55, .9);
+}
+
+a.twitter:active {
     background: #4586ae;
     background: linear-gradient(#4586ae, #65acc8);
-  }
-  
- .icons {
-     background: url(../img/Twiter.png);
-     bottom: 5px;
-     display: block;
-     height: 30px;
-     width: 30px;
-     position: absolute;
-     right: 10px;
- }
+}
 
-  /* Facebook */
-  a.facebook {
+.icons {
+    background: url(../img/Twiter.png);
+    bottom: 5px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 10px;
+}
+
+/* Facebook */
+a.facebook {
     background: #4669ab;
     background: linear-gradient(#4669ab, #304886);
     border-top: 1px solid #8ea4cd;
-    color: rgba(21,31,53,1);
-    text-shadow: 0 1px 1px rgba(255,255,255,.35);
-  }
-  
-  a.facebook:active {
+    color: rgba(21, 31, 53, 1);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .35);
+}
+
+a.facebook:active {
     background: #304886;
     background: linear-gradient(#304886, #4669ab);
-  }
-  .icons {
+}
+
+.icons {
     background: url(../img/Facebook.png);
     bottom: 5px;
     display: block;
     height: 30px;
     width: 30px;
     position: absolute;
-    right: 10px; 
-  }
-  
-  
-  .icons.twitter { background-position: -25px 0 }
-  
-  .icons.facebook { background-position: -50px 0 }
+    right: 10px;
+}
+
+
+.icons.twitter {
+    background-position: -25px 0
+}
+
+.icons.facebook {
+    background-position: -50px 0
+}
+
 /* Fin Redes sociales */
 
 
@@ -209,86 +232,102 @@ a.s3d  {
 
 @media only screen and (max-width: 900px) {
     #main-container {
-        background-color: red; 
-           
+        background-color: red;
+
     }
-    .ancho-principal{
+
+    .ancho-principal {
         width: 90%;
     }
+
     .aside-left {
-         display: none;
-     }
+        display: none;
+    }
+
     .aside-rigth {
-          width: 100%;
-          margin: auto;
-      }
-    footer {  
+        width: 100%;
+        margin: auto;
+    }
+
+    footer {
         height: 900px;
     }
-    .cajas-footer{
+
+    .cajas-footer {
         width: 100%;
         height: 150px;
         text-align: center;
         padding: 25px 0px 25px 0px;
     }
-}  
-  @media only screen and (min-width: 900px) and (max-width: 1300px) {
-     #main-container {
-         background-color:yellow;
-     }
-    .aside-left{
-         display: none;
-     }
-     footer {
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+    #main-container {
+        background-color: yellow;
+    }
+
+    .aside-left {
+        display: none;
+    }
+
+    footer {
         height: 700px;
     }
-    .cajas-footer{
+
+    .cajas-footer {
         width: 40%;
     }
- } 
+}
 
- @media only screen and (min-width:1300px)  {
-     #main-container {
-         background-color: blue;
-     }
- }
+@media only screen and (min-width:1300px) {
+    #main-container {
+        background-color: blue;
+    }
+}
+
 /* iPads (portrait)*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     #main-container {
-        background-color:violet;
+        background-color: violet;
     }
 }
+
 /* iPads (landscape) */
 @media only screen and (min-device-width : 1024px) and (max-device-width : 768px) and (orientation : landscape) {
-      #main-container {
-          background-color: orange !important;
-      }
+    #main-container {
+        background-color: orange !important;
+    }
 }
+
 /* iPhone (portrait)*/
 @media only screen and (min-device-width : 390px) and (max-device-width : 844px) and (orientation : portrait) {
     #main-container {
-        background-color:rgb(63, 207, 218);
+        background-color: rgb(63, 207, 218);
     }
 }
+
 /* iPhone (landscape) */
 @media only screen and (min-device-width : 844px) and (max-device-width : 390px) and (orientation : landscape) {
-      #main-container {
-          background-color: grey !important;
+    #main-container {
+        background-color: grey !important;
     }
 }
 
+/* Estilo formulario */
+form input,
+form textarea,
+form select {
+    display: block;
+}
 
-form input, form textarea, form select {
-    display: block;    
-    } 
-
-form input[type="radio"], form input[type="checkbox"] {
+form input[type="radio"],
+form input[type="checkbox"] {
     display: inline;
 }
 
 form label {
-    margin-top:10px;
-    display:inline-block;
+    margin-top: 10px;
+    display: inline-block;
     font-weight: bold;
 }
 
@@ -299,3 +338,5 @@ form label {
 .nobold {
     font-weight: normal;
 }
+
+/* Fin estilo formulario */
