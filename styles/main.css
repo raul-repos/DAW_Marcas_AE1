@@ -33,15 +33,8 @@ header {
 
 header nav {
     display: flex;
-<<<<<<< HEAD
-    /* border: 1px solid red; */
     align-items: center;
     justify-content: space-evenly;
-    /* display: inline-block; */
-=======
-    align-items: center;
-    justify-content: space-evenly;
->>>>>>> d7b500fb14b3c04ff03aec519c7458e7a14b9d37
     width: 70%;
     text-align: center;
     height: 100%;
@@ -64,13 +57,8 @@ header nav {
 }
 
 /* Animacion hover en links */
-<<<<<<< HEAD
-/* IMPORTANTE que sea en pseudoclase :after para que se renderice después de  */
-.menu__container a::after {
-=======
 /* IMPORTANTE que sea en pseudoelemento :after para que se renderice después de cargar el html (De lo contrario no es una añadido sino que lo modifica totalmente */
 .menu__container a::after{
->>>>>>> d7b500fb14b3c04ff03aec519c7458e7a14b9d37
     content: '';
     width: 0%;
     height: 2px;
