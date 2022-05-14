@@ -13,37 +13,61 @@ body{
 header{
     width: 100%;
     height: 110px;
-    background-color: grey;
-  /*   border: 2px solid grey; */
+    background-image: linear-gradient(to right, #1b2f39, rgba(255, 255, 255, 0.89));
 }
 
 #contenedor-logo{
-    border: 1px solid red;
     width: 29%;
     height: 90%;
     margin: auto;
     float: left;
+    border-bottom: 1px solid grey;
 }
 #contenedor-logo img{
     max-width: 100%;
 }
 header nav{
+    display: flex;
+        /* border: 1px solid red; */
+        align-items: center;
+        justify-content: space-evenly;
+    /* display: inline-block; */
     width: 70%;
-    text-align: right;
-    float: left;
-    height: 90%;
-    margin: auto;
+    text-align: center;
+    height: 100%;
+    margin: 0%;
+}
+.menu__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+        
 }
 
-nav a{
-    color: white;
-    text-decoration: none;
-   /*  margin: 0 2rem; */
+.menu__container a{
+    color: #1b2f39;
+    text-decoration: none;  
+        
+
 }
-nav a:hover{
-    background-color: white;
-    color: black;
+
+/* Animacion hover en links */
+/* IMPORTANTE que sea en pseudoclase :after para que se renderice después de  */
+.menu__container a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(34, 34, 95);
+    display: block;
+    margin: auto;
+    transition: 0.5s ;
 }
+
+.menu__container a:hover::after{
+    width: 100%;
+}
+
 #main-container {
     background-color: whitesmoke;
     height: 100%; 
@@ -224,9 +248,6 @@ a.s3d  {
         background-size: cover;
     }
     
-
-
-
     #contenedor-logo{
         height: 5rem;
         border: none;
