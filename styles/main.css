@@ -318,6 +318,14 @@ a.facebook:active {
 /* Fin Redes sociales */
 
 /* Estilo formulario */
+form{
+    font-family: 'Rubik';
+}
+.arroba{
+    max-width: 30%;
+    float: right;
+}
+
 form input,
 form textarea,
 form select {
