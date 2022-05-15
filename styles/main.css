@@ -75,7 +75,7 @@ header nav {
 
 #main-container {
     background-color: whitesmoke;
-    padding: 20px;
+    height: 1100px;
 }
 
 section {
@@ -563,8 +563,4 @@ form legend {
     #main-container {
         background-color: grey !important;
     }
-}
-
-.noheight {
-    height:auto;
 }
