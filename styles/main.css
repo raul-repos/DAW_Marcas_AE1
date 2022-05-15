@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
 body {
     margin: 0;
@@ -9,8 +10,8 @@ body {
 /*No modificar!!*/
 .ancho-principal {
     width: 80%;
-    height: 100%;
     margin: auto;
+    height: 100%;
 }
 
 header {
@@ -58,7 +59,7 @@ header nav {
 
 /* Animacion hover en links */
 /* IMPORTANTE que sea en pseudoelemento :after para que se renderice después de cargar el html (De lo contrario no es una añadido sino que lo modifica totalmente */
-.menu__container a::after{
+.menu__container a::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -74,32 +75,92 @@ header nav {
 
 #main-container {
     background-color: whitesmoke;
-    height: 120vh;
-    padding: 20px;
+    height: 1100px;
 }
 
 section {
-    background-color: beige;
+    background-color: #ffffff;
     border: 2px dotted black;
     height: 50%;
     padding: 20px;
 }
 
 .aside-left {
-
-    position: relative;
-    display: inline-block;
     width: 30%;
     height: 100%;
+    float: left;
+    margin-left: 5px;
 }
 
-.aside-rigth {
-
-    position: relative;
-    display: inline-block;
+.main-rigth {
     width: 60%;
-    /* margin-left: 40px; */
     height: 100%;
+    float: right;
+    margin-right: 5px;
+}
+
+.contenedor-portada {
+    height: 425px;
+    width: 100%;
+    position: relative;
+}
+
+#portada {
+    position: absolute;
+    background-image: url(../img/Kirt.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+#titulo-portada {
+    position: absolute;
+    color: #5c6b72;
+    font-family: 'Koulen', cursive;
+    font-size: 3.5em;
+    line-height: 0.9;
+    text-shadow: 2px 2px #ffffff;
+    text-align: center;
+    height: 255px;
+    width: 90%;
+    padding-top: 170px;
+}
+
+#cajas-portada {
+    height: 680px;
+}
+
+#cajas-portada div {
+    float: left;
+    height: 50%;
+}
+
+.c-portada-peq {
+    width: 50%;
+    text-align: center;
+}
+
+.c-portada-gra {
+    width: 100%;
+}
+
+.c-portada-gra h1 {
+    font-family: 'Koulen', cursive;
+    font-size: 2.5em;
+    line-height: 0.9;
+    text-align: right;
+    padding-right: 30px;
+    color: #dd3333;
+}
+
+.c-portada-gra p {
+    font-family: 'Rubik',
+        sans-serif;
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: justify;
 }
 
 
@@ -125,17 +186,18 @@ section {
 
 footer {
     font-family: 'Rubik', sans-serif;
-    height: 300px;
+    height: 400px;
     background-color: #1b2f39;
     position: relative;
     display: block;
     color: #fff;
     line-height: 25px;
     border-bottom: 25px solid #304886;
+    margin-top: 50px;
 }
 
 .cajas-footer {
-    height: 250px;
+    height: 280px;
     width: 20%;
     background-color: #1b2f39;
     padding: 25px;
@@ -257,195 +319,6 @@ a.facebook:active {
 /* Fin Redes sociales */
 
 
-/* Mogollon de media queries */
-
-
-@media only screen and (max-width: 900px) {
-    #main-container {
-        background-color: red;
-    }
-
-
-    /* HEADER */
-    /* Ocupa el total de la pantalla */
-    header {
-        width: 100vw;
-        height: 100vh;
-        background-color: transparent;
-        background-image: linear-gradient(rgba(186, 191, 212, 0.7),
-                rgba(58, 83, 59, 0.7)), url(../img/mobileMainImage.jpg);
-        background-size: cover;
-    }
-
-    #contenedor-logo {
-        height: 5rem;
-        border: none;
-    }
-
-    #contenedor-logo img {
-        height: 100%;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 1), #1b2f39);
-    }
-
-    /* Menu */
-
-    header nav{
-        height: 5rem;
-    }
-    .menu__container{
-        display: flex;
-        /* border: 1px solid red; */
-        align-items: center;
-        justify-content: center;
-        height: 5rem;
-        padding: 0, 6rem;
-        background-image: linear-gradient(to right,#1b2f39, #818592);
-    }
-
-    
-
-    /* Botones de menu */
-    .nav__link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: whitesmoke;
-        margin-left: 3rem;
-        margin-right: 1.5rem;
-        background-color: rgb(173, 188, 236);
-        border-radius: 16px;
-        height: 2rem;
-        width: 6rem;  
-        min-width: 90px;
-        transition: all 0.2s;
-        padding-left: 2rem;
-    }
-
-    .nav__link:hover {
-        font-weight: bolder;
-        border-bottom: 3px solid #ffffff;
-        background-color: rgb(124, 124, 235);
-        color: rgb(235, 235, 235);
-    }
-
-    .menu__container a:hover::after {
-        width: 0%;
-    }
-
-    /* Body */
-
-    /* 
-    ***No modificar por que desarmará todos los demás objetos
-    *
-    .ancho-principal{
-        width: 100%;
-        margin:0;
-        padding-right: 0%;
-    } */
-
-    .aside-left {
-        display: none;
-    }
-
-    .aside-rigth {
-        width: 100%;
-        margin: auto;
-    }
-
-    /* Footer */
-
-    footer {
-        height: 1200px;
-    }
-
-    .cajas-footer {
-        width: 100%;
-        height: 250px;
-        text-align: center;
-        padding: 25px 0px 25px 0px;
-    }
-
-    .texto-footer {
-        font-size: 25px;
-        line-height: 50px;
-    }
-
-    .map-iframe {
-        width: 100%;
-        height: 250px;
-    }
-
-    .listas-footer {
-        font-size: 25px;
-        line-height: 50px;
-    }
-
-}
-
-/* fin media queries max-width: 900px */
-
-@media only screen and (min-width: 900px) and (max-width: 1300px) {
-    #main-container {
-        background-color: yellow;
-    }
-
-    .aside-left {
-        display: none;
-    }
-
-    footer {
-        height: 700px;
-    }
-
-    .cajas-footer {
-        width: 40%;
-    }
-
-    .texto-footer {
-        font-size: 23px;
-    }
-
-    .map-iframe {
-        width: 100%;
-        height: 200px;
-    }
-}
-
-@media only screen and (min-width:1300px) {
-    #main-container {
-        background-color: blue;
-    }
-}
-
-/* iPads (portrait)*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    #main-container {
-        background-color: violet;
-    }
-}
-
-/* iPads (landscape) */
-@media only screen and (min-device-width : 1024px) and (max-device-width : 768px) and (orientation : landscape) {
-    #main-container {
-        background-color: orange !important;
-    }
-}
-
-/* iPhone (portrait)*/
-@media only screen and (min-device-width : 390px) and (max-device-width : 844px) and (orientation : portrait) {
-    #main-container {
-        background-color: rgb(63, 207, 218);
-    }
-}
-
-/* iPhone (landscape) */
-@media only screen and (min-device-width : 844px) and (max-device-width : 390px) and (orientation : landscape) {
-    #main-container {
-        background-color: grey !important;
-    }
-}
-
 /* Estilo formulario */
 form input,
 form textarea,
@@ -482,6 +355,214 @@ form legend {
     font-style: oblique;
 }
 
-/* carrusel*/
 
-/* fin carrusel */
+
+
+
+
+
+
+/* Mogollon de media queries, que van al final */
+
+
+@media only screen and (max-width: 900px) {
+    #main-container {
+        background-color: red;
+    }
+
+    /* HEADER */
+    /* Ocupa el total de la pantalla */
+    header {
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+        background-image: linear-gradient(rgba(186, 191, 212, 0.7),
+                rgba(58, 83, 59, 0.7)), url(../img/mobileMainImage.jpg);
+        background-size: cover;
+    }
+
+    #contenedor-logo {
+        height: 5rem;
+        border: none;
+    }
+
+    #contenedor-logo img {
+        height: 100%;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 1), #1b2f39);
+    }
+
+    /* Menu */
+
+    header nav {
+        height: 5rem;
+    }
+
+    .menu__container {
+        display: flex;
+        /* border: 1px solid red; */
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        padding: 0, 6rem;
+        background-image: linear-gradient(to right, #1b2f39, #818592);
+    }
+
+
+
+    /* Botones de menu */
+    .nav__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: whitesmoke;
+        margin-left: 3rem;
+        margin-right: 1.5rem;
+        background-color: rgb(173, 188, 236);
+        border-radius: 16px;
+        height: 2rem;
+        width: 6rem;
+        min-width: 90px;
+        transition: all 0.2s;
+        padding-left: 2rem;
+    }
+
+    .nav__link:hover {
+        font-weight: bolder;
+        border-bottom: 3px solid #ffffff;
+        background-color: rgb(124, 124, 235);
+        color: rgb(235, 235, 235);
+    }
+
+    .menu__container a:hover::after {
+        width: 0%;
+    }
+
+    /* Body */
+
+    /* 
+    ***No modificar por que desarmará todos los demás objetos
+    *
+    .ancho-principal{
+        width: 100%;
+        margin:0;
+        padding-right: 0%;
+    } */
+
+    .aside-left {
+        display: none;
+    }
+
+    .main-rigth {
+        width: 90%;
+        margin: auto;
+        float: none;
+    }
+
+    /* Footer */
+
+    footer {
+        margin-top: 0px;
+        height: 1300px;
+    }
+
+    .cajas-footer {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        padding: 25px 0px 25px 0px;
+    }
+
+    .texto-footer {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .listas-footer {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+}/* fin media queries max-width: 900px */
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+    #main-container {
+        background-color: yellow;
+    }
+
+    section {
+        padding: 0px;
+    }
+
+    .aside-left {
+        display: none;
+    }
+
+    .main-rigth {
+        width: 90%;
+        margin: auto;
+        float: none;
+    }
+
+    #titulo-portada {
+        width: 100%;
+    }
+
+    footer {
+        height: 700px;
+        margin-top: 0px;
+    }
+
+    .cajas-footer {
+        width: 40%;
+    }
+
+    .texto-footer {
+        font-size: 23px;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width:1300px) {
+    #main-container {
+        background-color: #d3d3d3;
+    }
+}
+
+/* iPads (portrait)*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    #main-container {
+        background-color: violet;
+    }
+}
+
+/* iPads (landscape) */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 768px) and (orientation : landscape) {
+    #main-container {
+        background-color: orange !important;
+    }
+}
+
+/* iPhone (portrait)*/
+@media only screen and (min-device-width : 390px) and (max-device-width : 844px) and (orientation : portrait) {
+    #main-container {
+        background-color: rgb(63, 207, 218);
+    }
+}
+
+/* iPhone (landscape) */
+@media only screen and (min-device-width : 844px) and (max-device-width : 390px) and (orientation : landscape) {
+    #main-container {
+        background-color: grey !important;
+    }
+}
+
