@@ -74,14 +74,12 @@ header nav {
 
 #main-container {
     background-color: whitesmoke;
-    height: 120vh;
     padding: 20px;
 }
 
 section {
     background-color: beige;
     border: 2px dotted black;
-    height: 50%;
     padding: 20px;
 }
 
@@ -256,6 +254,44 @@ a.facebook:active {
 
 /* Fin Redes sociales */
 
+/* Estilo formulario */
+form input,
+form textarea,
+form select {
+    display: block;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    display: inline;
+}
+
+form label, .bold {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.bold {
+    margin-bottom: 0px;
+}
+
+.nobold {
+    font-weight: normal;
+}
+
+.input-textarea {
+    margin-bottom: 10px;
+}
+
+form legend {
+    font-size: 30px;
+    font-style: oblique;
+}
+.radiocheck label {
+    margin:0px;
+}
 
 /* Mogollon de media queries */
 
@@ -265,7 +301,11 @@ a.facebook:active {
         background-color: red;
     }
 
-
+    /*formulario*/
+    .radiocheck {
+        display:block;
+    }
+    
     /* HEADER */
     /* Ocupa el total de la pantalla */
     header {
@@ -446,41 +486,7 @@ a.facebook:active {
     }
 }
 
-/* Estilo formulario */
-form input,
-form textarea,
-form select {
-    display: block;
-}
 
-form input[type="radio"],
-form input[type="checkbox"] {
-    display: inline;
-}
-
-form label {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.nobold {
-    font-weight: normal;
-}
-
-.input-textarea {
-    margin-bottom: 10px;
-}
-
-form legend {
-    font-size: 30px;
-    font-style: oblique;
-}
 
 /* carrusel*/
 

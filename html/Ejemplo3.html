@@ -24,19 +24,19 @@
 </header>
 	<div id="main-container">
 		<section>
-			<form id="survey-form">
+			<form>
 				<fieldset><legend> Formulario de contacto:</legend>
-				<label id="name-label" for="name">Nombre</label>
-				<input type="text" name="name" id="name" class="form-control" placeholder="Escriba su nombre" required autofocus>
+				<label for="name">Nombre</label>
+				<input type="text" name="name" id="name" placeholder="Escriba su nombre" required autofocus>
 
-				<label id="email-label" for="email">Email</label>
-				<input type="email" name="email" id="email" class="form-control" placeholder="Escriba su email" required>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="Escriba su email" required>
 
-				<label id="number-label" for="number">Edad <span class="nobold">(opcional)</span></label>
-				<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad">
+				<label for="number">Edad <span class="nobold">(opcional)</span></label>
+				<input type="number" name="age" id="number" min="10" max="99" placeholder="Edad">
 
 				<label for="serviciosolicitado">¿Qué servicio necesita?</label>
-				<select id="serviciosolicitado" name="serviciosolicitado" class="form-control" required>
+				<select id="serviciosolicitado" name="serviciosolicitado" required>
 					<option disabled selected value="none">Seleccionar servicio</option>
 					<option value="presupuesto">Presupuesto</option>
 					<option value="mantenimiento">Mantenimiento</option>
@@ -45,20 +45,24 @@
 					<option value="otros">Otros</option>
 				</select>
 				<div>
-					<span class="bold">¿Recomendarías este taller a un amigo?</span>
+					<span class="bold">¿Recomendarías este taller a un amigo?</span><br>
 					
-					<input id="urseguro" name="user-recommend" value="definitely" type="radio" checked>
-					<label for="urseguro" class="nobold">Seguro</label>
-					
-					<input id="urtalvez" name="user-recommend" value="maybe" type="radio">
-					<label for="urtalvez" class="nobold">Tal vez</label>
-			
-					<input id="urnoseguro" name="user-recommend" value="not-sure" type="radio">
-					<label for="urnoseguro" class="nobold">No estoy seguro</label>
+					<span class="radiocheck">
+						<input id="urseguro" name="user-recommend" value="definitely" type="radio" checked>
+						<label for="urseguro" class="nobold">Seguro</label>
+					</span>
+					<span class="radiocheck">
+						<input id="urtalvez" name="user-recommend" value="maybe" type="radio">
+						<label for="urtalvez" class="nobold">Tal vez</label>
+					</span>
+					<span class="radiocheck">
+						<input id="urnoseguro" name="user-recommend" value="not-sure" type="radio">
+						<label for="urnoseguro" class="nobold">No estoy seguro</label>
+					</span>
 				</div>
 
 				<label for="most-like">¿Cuál es tu característica favorita de este taller?</label>
-				<select id="most-like" name="mostLike" class="form-control" required>
+				<select id="most-like" name="mostLike" required>
 					<option disabled selected value="none">Seleccione una opción</option>
 					<option value="atcliente">Atencion al cliente</option>
 					<option value="repuestos">Repuestos</option>
@@ -68,15 +72,23 @@
 					<span class="bold">
 						¿Qué mejoraria?
 						<span class="nobold">(Marque las que quiera)</span>
+					</span><br>
+					<span class="radiocheck"> 
+						<input type="checkbox" id="mejora1" name="mejoras" value="lavado">
+						<label for="mejora1" class="nobold"> Lavado gratis</label>
 					</span>
-					<input type="checkbox" id="mejora1" name="mejoras" value="lavado">
-					<label for="mejora1" class="nobold"> Lavado gratis</label>
-					<input type="checkbox" id="mejora2" name="mejoras" value="sala">
-					<label for="mejora2" class="nobold"> Sala de espera</label>
-					<input type="checkbox" id="mejora3" name="mejoras" value="orden">
-					<label for="mejora3" class="nobold"> Orden y limpieza</label>
-					<input type="checkbox" id="mejora4" name="mejoras" value="rapidez">
-					<label for="mejora4" class="nobold"> Rapidez de atención</label>
+					<span class="radiocheck"> 
+						<input type="checkbox" id="mejora2" name="mejoras" value="sala">
+						<label for="mejora2" class="nobold"> Sala de espera</label>
+					</span>
+					<span class="radiocheck"> 
+						<input type="checkbox" id="mejora3" name="mejoras" value="orden">
+						<label for="mejora3" class="nobold"> Orden y limpieza</label>
+					</span>
+					<span class="radiocheck"> 
+						<input type="checkbox" id="mejora4" name="mejoras" value="rapidez">
+						<label for="mejora4" class="nobold"> Rapidez de atención</label>
+					</span>
 				</div>
 				
 				<label for="comments">¿Algún comentario o sugerencia?</label>
