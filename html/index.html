@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <script src="https://kit.fontawesome.com/c20962c584.js" crossorigin="anonymous"></script>
   <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+
+  <!-- Link a CSS y JS -->
   <link rel="stylesheet" href="../styles/main.css" />
+  <script src="../javascript/sidebar.js" ></script>
+  
   <title>HiperRoad</title>
   <link rel="shortcut icon" type="image/svg" href="../img/favicon.svg" />
 </head>
@@ -32,8 +36,16 @@
 
   <div id="main-container" class="ancho-principal">
     <section class="aside-left">
-      <h1>Texto1</h1>
+      <input  type="submit" onclick="showDiv1()" value="1"> <a ></a>
+      <input type="submit" onclick="showDiv2()" value="2"> <a></a>
+      <input type="submit" onclick="showDiv3()" value="3"> <a></a>
+      <div class='aside-left__text-container' id="div1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dicta molestias pariatur non distinctio. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odit quod eveniet consequatur beatae. Eaque ratione dolorum consequuntur eius in!</p></div>
+      <div class='aside-left__text-container'id="div2">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia illum <br> quos quae eius. Vitae ad suscipit, tempore in porro id? <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, maiores. <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quod quasi, labore tempore voluptatibus nesciunt? Facilis possimus doloremque dolorum ratione id error sed inventore cupiditate saepe, similique iste natus, sapiente corrupti, exercitationem quibusdam culpa? Tenetur magni a non numquam voluptate vero quis consectetur nostrum ex vitae perferendis, asperiores accusantium sunt.</p>
+      </div>
+      <div class='aside-left__text-container'id="div3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, porro tempora? Libero nulla praesentium facere.</div>
     </section>
+  
     <section class="main-rigth">
 
       <div class="contenedor-portada">

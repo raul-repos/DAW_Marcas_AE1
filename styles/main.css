@@ -92,6 +92,34 @@ section {
     margin-left: 5px;
 }
 
+/* Textos dinámicos aside-left */
+
+.aside-left__text-container{
+    border: 1px solid #1b2f39;
+    padding: 2rem;
+    margin-top: 20px;
+}
+
+input[type=submit]{
+    background-color: #283035;
+    border-radius: 16px;
+    width: 30%;
+    height: 5%;
+    color: white;
+}
+input[type=submit]:hover{
+    background-color: #4586ae;
+    border-bottom: 5px solid black;
+}
+
+#div2{
+    display: none;
+}
+
+#div3{
+    display: none;
+}
+
 .main-rigth {
     width: 60%;
     height: 100%;
@@ -382,11 +410,12 @@ form legend {
     /* Ocupa el total de la pantalla */
     header {
         width: 100vw;
-        height: 100vh;
+        height: 50vh;
         background-color: transparent;
         background-image: linear-gradient(rgba(186, 191, 212, 0.7),
                 rgba(58, 83, 59, 0.7)), url(../img/mobileMainImage.jpg);
         background-size: cover;
+        background-position: center;
     }
 
     #contenedor-logo {
@@ -397,6 +426,7 @@ form legend {
     #contenedor-logo img {
         height: 100%;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 1), #1b2f39);
+
     }
 
     /* Menu */
