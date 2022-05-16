@@ -156,8 +156,7 @@ section {
 }
 
 .c-portada-gra p {
-    font-family: 'Rubik',
-        sans-serif;
+    font-family: 'Rubik',sans-serif;
     font-size: 1.5em;
     padding: 20px;
     text-align: justify;
@@ -371,6 +370,7 @@ form legend {
 @media only screen and (max-width: 900px) {
     #main-container {
         background-color: red;
+        width: 100%;
     }
 
     /*formulario*/
@@ -467,8 +467,17 @@ form legend {
         float: none;
     }
 
-    /* Footer */
+    #titulo-portada {
+        width: 100%;
+    }
 
+    .c-portada-peq {
+        width: 44%;
+    }
+    .c-portada-gra p{
+            font-size: 1.2em;
+            padding: 0px;
+    }
     footer {
         margin-top: 0px;
         height: 1300px;
@@ -496,7 +505,9 @@ form legend {
         line-height: 50px;
     }
 
-}/* fin media queries max-width: 900px */
+}
+
+/* fin media queries max-width: 900px */
 
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
     #main-container {
@@ -542,7 +553,7 @@ form legend {
 
 @media only screen and (min-width:1300px) {
     #main-container {
-        background-color: #d3d3d3;
+        background-color: #1ed8c8;
     }
 }
 
@@ -560,16 +571,47 @@ form legend {
     }
 }
 
-/* iPhone (portrait)*/
+/* iPhone (portrait) 12 pro*/
 @media only screen and (min-device-width : 390px) and (max-device-width : 844px) and (orientation : portrait) {
     #main-container {
         background-color: rgb(63, 207, 218);
+        height: 1350px;
     }
+    .contenedor-portada{
+        height: 300px;
+    }
+    #titulo-portada{
+            font-size: 2.5em;
+            padding-top: 100px;
+    }
+    .c-portada-gra h1{
+            font-size: 1.5em;
+    }
+    .c-portada-gra p{
+        pad: 0px;
+    }
+    .c-portada-peq {
+        width: 51%;
+        position: relative;
+        display: flex;
+
+    }
+
 }
 
-/* iPhone (landscape) */
+/* iPhone (landscape) 12 pro*/
 @media only screen and (min-device-width : 844px) and (max-device-width : 390px) and (orientation : landscape) {
     #main-container {
         background-color: grey !important;
     }
+    /* Las dos sigientes no las coge y no lo pude resolver*/
+    .c-portada-gra h1{
+        font-size: 3.0em;
+        text-align: center !important;
+    }
+    .c-portada-gra p{
+          font-size: 1.5em;
+    }
+
+
 }
