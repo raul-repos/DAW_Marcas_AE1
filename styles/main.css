@@ -410,12 +410,19 @@ form legend {
     /* Ocupa el total de la pantalla */
     header {
         width: 100vw;
-        height: 50vh;
-        background-color: transparent;
+        height: 5rem;
+        /* Imagen fuera, sin texto encima no queda muy bien */
+
+        /* height: 50vh;
         background-image: linear-gradient(rgba(186, 191, 212, 0.7),
                 rgba(58, 83, 59, 0.7)), url(../img/mobileMainImage.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: center; */
+        position: sticky;
+        top: 0;
+        z-index: 999999;
+
+
     }
 
     #contenedor-logo {
@@ -430,10 +437,6 @@ form legend {
     }
 
     /* Menu */
-
-    header nav {
-        height: 5rem;
-    }
 
     .menu__container {
         display: flex;
