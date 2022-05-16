@@ -361,7 +361,7 @@ form legend {
 
 @media only screen and (max-width: 900px) {
     #main-container {
-        background-color: red;
+       
         width: 100%;
     }
 
@@ -498,7 +498,7 @@ form legend {
 
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
     #main-container {
-        background-color: yellow;
+       
     }
 
     section {
@@ -540,28 +540,28 @@ form legend {
 
 @media only screen and (min-width:1300px) {
     #main-container {
-        background-color: #1ed8c8;
+        
     }
 }
 
 /* iPads (portrait)*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     #main-container {
-        background-color: violet;
+        
     }
 }
 
 /* iPads (landscape) */
 @media only screen and (min-device-width : 1024px) and (max-device-width : 768px) and (orientation : landscape) {
     #main-container {
-        background-color: orange !important;
+        
     }
 }
 
 /* iPhone (portrait) 12 pro*/
 @media only screen and (min-device-width : 390px) and (max-device-width : 844px) and (orientation : portrait) {
     #main-container {
-        background-color: rgb(63, 207, 218);
+        
         height: 1350px;
     }
     .contenedor-portada{
@@ -589,7 +589,7 @@ form legend {
 /* iPhone (landscape) 12 pro*/
 @media only screen and (min-device-width : 844px) and (max-device-width : 390px) and (orientation : landscape) {
     #main-container {
-        background-color: grey !important;
+        
     }
     /* Las dos sigientes no las coge y no lo pude resolver*/
     .c-portada-gra h1{
