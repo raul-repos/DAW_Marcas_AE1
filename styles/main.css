@@ -454,15 +454,13 @@ form legend {
         justify-content: center;
         text-align: center;
         color: whitesmoke;
-        margin-left: 3rem;
-        margin-right: 1.5rem;
+        margin-left: 3vw;
         background-color: rgb(173, 188, 236);
         border-radius: 16px;
         height: 2rem;
         width: 6rem;
-        min-width: 90px;
         transition: all 0.2s;
-        padding-left: 2rem;
+        padding-left: 0.5rem;
     }
 
     .nav__link:hover {
