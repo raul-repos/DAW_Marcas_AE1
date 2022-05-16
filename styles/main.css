@@ -693,16 +693,22 @@ form legend {
 }
 
 @media only screen and (min-width:1300px) {
-    
+    #main-container {
+        
+    }
 }
 
 /* iPads (portrait)*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-   
+    #main-container {
+        
+    }
 }
 
 /* iPads (landscape) */
 @media only screen and (min-device-width : 1024px) and (max-device-width : 768px) and (orientation : landscape) {
+    #main-container {
+        
     }
 
     /* iPhone (portrait) 12 pro*/
@@ -735,7 +741,7 @@ form legend {
 
         }
 
-    }
+
 
     /* iPhone (landscape) 12 pro */
     @media only screen and (min-device-width : 844px) and (max-device-width : 390px) and (orientation : landscape) {
